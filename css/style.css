@@ -1,0 +1,210 @@
+body {
+  background: #75bb45 url('../images/background.png') repeat-y;
+  margin: 0 68px 0 68px;
+}
+
+div#header {
+  background: #fff url('../images/banner.png') no-repeat top left;
+  height: 114px;
+  left: 11px;
+  position: relative;
+  top: 36px;
+  width: 753px;
+}
+
+div#content {
+  padding: 20px 5px 20px 40px;
+  position: relative;
+  width: 675px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.news:hover {
+  background: lightgrey;
+}
+
+.show:hover {
+  background: darkgrey;
+}
+
+.hide:hover {
+  background: darkgrey;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+div#footer {
+  background: #fff url('../images/footer.png') no-repeat top left;
+  height: 114px;
+  left: 11px;
+  position: relative;
+  top: 36px;
+  width: 753px;
+}
+
+label {
+  display: block;
+  float: left;
+  width: 150px;
+  padding: 0 10px;
+  margin: 5px 0 0;
+  text-align: right;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  width: 690px;
+}
+
+fieldset {
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  margin: 0;
+}
+
+fieldset br {
+  clear: left;
+}
+
+form input, form textarea {
+  margin: 5px 0 5px 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+input.error {
+  border: 1px dotted red;
+}
+
+label.error {
+  color: red;
+  display: inline;
+  float: none;
+  font-style: italic;
+  margin-left: 10px;
+  width: auto;
+}
+
+p.footer {
+    display: block;
+    text-align: right;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 10%;
+}
+h1.header {
+    display: block;
+    text-align: left;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10%;
+}
+
+.one ul {
+  padding: 0;
+  width: auto;
+  white-space: nowrap;
+  background: #FFF;
+}
+.one li {
+  width: auto;
+  display: inline-block;
+}
+.one a {
+  padding: 1em;
+  display: block;
+  color: #74924C;
+//  border-right: 1px solid #BAD78B;
+  background: rgba(186, 215, 139, .3);
+}
+.one a:hover {
+  background: #BAD78B
+}
+
+* {box-sizing: border-box;}
+$bg-color: rgb(100,100,100);
+
+body {background-color: $bg-color; color: #fff;}
+header {
+  background-color: rgba(0,0,0,.5);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em;
+}
+
+.panel-wrapper {
+  position: relative;
+}
+
+.btn {
+  color: black;
+  background: lightgray;
+  border-radius: 1.5em;
+  left: 30%;
+  padding: 0em;
+  text-decoration: none;
+  width: 20%;
+}
+.show, .hide {
+  position: absolute;
+  bottom: -1em;
+  z-index: 100;
+  text-align: center;
+}
+
+.hide {display: none;}
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .panel {
+   max-height: 2000px; 
+}
+.show:target ~ .fade {
+  margin-top: 0;
+}
+
+.panel {
+  position: relative;
+  margin: 2em auto;
+  width: 100%;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.fade {
+  background: linear-gradient(to bottom, rgba($bg-color,0) 0%,rgba($bg-color,1) 75%);
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+}
+
+.button {
+  border: 1px solid #333; /* Рамка */
+  display: inline-block;
+  background: #DCDCDC;
+  padding: 5px 15px; /* Поля */
+  text-decoration: none; /* Убираем подчёркивание */
+  color: #000; /* Цвет текста */
+}
+.button:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+  background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+  color: #a00;
+}
+.success {
+  background-color: yellow;
+}
