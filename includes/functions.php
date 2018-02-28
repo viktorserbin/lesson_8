@@ -77,6 +77,7 @@ function getNewsFromFiles (){
         $long_news='data/txt/'.$id.'.txt';
         if (file_exists($long_news)){
             $txt=file_get_contents($long_news);
+            $txt = preg_replace("/[\r\n]+/", "</p><p>", $txt);
         }
         else {
             $txt='no data';
